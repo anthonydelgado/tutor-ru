@@ -16,7 +16,7 @@ $.ajax({
 
         // console.log(key);
         // console.log(value);
-        $('#userlist').append('<li class="collection-item click-to-call" data-user="' + value.username + '"><div>' + value.username + '<a href="#!" class="secondary-content"><i class="material-icons red-text text-darken-4">videocam</i></a> <a href="#!" class="secondary-content"><i class="material-icons red-text text-darken-4">chat</i></a> <a href="#!" class="secondary-content"><i class="material-icons red-text text-darken-4">phone</i></a></div></li>');
+        $('#userlist').append('<li class="collection-item click-to-call white-text transparent" data-user="' + value.username + '"><div>' + value.username + '<a href="#!" class="secondary-content"><i class="material-icons white-text">videocam</i></a> <a href="#!" class="secondary-content"><i class="material-icons white-text">chat</i></a> <a href="#!" class="secondary-content"><i class="material-icons white-text">phone</i></a></div></li>');
 
     });
 

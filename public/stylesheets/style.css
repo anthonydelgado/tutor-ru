@@ -33,7 +33,10 @@ div#map_canvas {
   background-image: linear-gradient(rgba(183,28,28,0.75), rgba(183,28,28,1));
   padding: 100px 0px;
 }
-
+.btn-ghost {
+  background: transparent !important;
+  border: 1px solid white;
+}
 .promo i {
   margin: 40px 0;
   color: #01579b;
