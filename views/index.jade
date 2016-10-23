@@ -1,10 +1,12 @@
 extends layout
 
 block content
-  if (!user)
-    a(href="/login") Login
-    br
-    a(href="/register") Register
-  if (user)
-    p You are currently logged in as #{user.username}
-    a(href="/logout") Logout
+
+      if (!user)
+
+        include  templates/home-hero.html
+
+      if (user)
+        div.container
+          p You are currently logged in as #{user.username}
+          a(href="/logout") Logout

@@ -12,6 +12,10 @@ router.get('/register', function(req, res) {
   res.render('register', { });
 });
 
+router.get('/userlist', function(req, res) {
+  res.render('userlist', { });
+});
+
 router.post('/register', function(req, res) {
   Account.register(new Account({ username : req.body.username }), req.body.password, function(err, account) {
     if (err) {
