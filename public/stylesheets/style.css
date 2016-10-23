@@ -11,7 +11,8 @@ a {
   background-image:  url("../images/bg.jpeg");
   background-image: linear-gradient(rgba(183,28,28,0.5), rgba(183,28,28,0.9)),url("../images/bg.jpeg");
   background-size: cover;
-  padding: 250px 0px;
+  padding: 150px 0px;
+  min-height: calc(100vh - 64px);
 }
 .text-upper {
   text-transform: uppercase;
