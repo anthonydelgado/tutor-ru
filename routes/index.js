@@ -12,8 +12,24 @@ router.get('/register', function(req, res) {
   res.render('register', { });
 });
 
-router.get('/userlist', function(req, res) {
+router.get('/search', function(req, res) {
   res.render('userlist', { });
+
+});
+
+router.get('/settings', function(req, res) {
+  res.render('settings', { });
+
+});
+
+router.get('/userlist', function(req, res) {
+  // res.render('userlist', { });
+
+  Account.find({}, function (err, docs) {
+    res.json(docs);
+    // console.log(docs);
+  });
+
 });
 
 router.post('/register', function(req, res) {
