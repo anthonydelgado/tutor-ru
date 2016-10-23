@@ -7,10 +7,11 @@ block content
         include  templates/home-hero.html
 
       if (user)
-        div.container
-          p You are currently logged in as #{user.username}
-          a(href="/logout") Logout
         .container
-            h3.center Conenct with a Rutgers Alumni Mentor
+            h3.center Connect with Rutgers Alumni
+            p.flow-text.center You are currently logged in as #{user.username}
+            .row.center
+                    a(href="/logout").btn.grey.darken-4 Logout
+                    br
             ul.collection.with-header#userlist
 

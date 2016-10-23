@@ -25,7 +25,20 @@ block content
             input.form-control(type='text', name="username", placeholder='Enter Username')
           .form-group
             input.form-control(type='password', name="password", placeholder='Password')
+          h5 Are you a Student?
+          .switch
+            label
+              No
+              input.form-control(type='checkbox', name="student")
+              span.lever
+              Yes
+          br
+          h5 Can you be a mentor?
+          .switch
+            label
+              No
+              input.form-control(type='checkbox', name="mentor")
+              span.lever
+              Yes
+          br
           button.btn.grey(type='submit') Signup
-          &nbsp;
-          a(href='/')
-            button.btn.grey(type="button") Cancel

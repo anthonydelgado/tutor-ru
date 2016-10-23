@@ -18,8 +18,7 @@ router.get('/search', function(req, res) {
 });
 
 router.get('/settings', function(req, res) {
-  res.render('settings', { });
-
+  res.render('setting', { });
 });
 
 router.get('/userlist', function(req, res) {
@@ -33,7 +32,7 @@ router.get('/userlist', function(req, res) {
 });
 
 router.post('/register', function(req, res) {
-  Account.register(new Account({ username : req.body.username }), req.body.password, function(err, account) {
+  Account.register(new Account({ username : req.body.username , mentor : req.body.mentor , student : req.body.student }), req.body.password, function(err, account) {
     if (err) {
       return res.render('register', { account : account });
     }
